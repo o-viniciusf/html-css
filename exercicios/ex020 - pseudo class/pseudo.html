@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-weight: bold;
+        }
+        div{
+            font-weight: bolder;
+            width: 300px;
+            text-align: center;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover>p{
+            display: block;
+            align-items: center;
+        }
+        .escondi{
+            background-color: black;
+            color: red;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 0 30px red;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">>Página 01< </a><a href="links.html">   >Página 03< </a>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p class="escondi">Achou Miserávi!!!</p>
+    </div>
+</body>
+</html>
