@@ -20,18 +20,28 @@
             background-color: gray;
             color: white;
         }
+        caption{
+            padding: 8PX;
+            font-size: 1.3EM;
+            font-weight: bold;
+            background-color: lightgrey;
+        }
         td.num{
             text-align: right;
+        }
+        tbody>tr:nth-child(even){
+            background-color: aquamarine;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>TABELA POPULAÇÃO POR ESTADO</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100PX;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -147,7 +157,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>213317639</strong></td>
             </tr>
         </tfoot>
